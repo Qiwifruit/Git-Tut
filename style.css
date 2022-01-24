@@ -1,0 +1,160 @@
+html{
+    margin:0;
+    padding: 0;
+    overflow-x: hidden;
+    height: 100%;
+}
+  
+body{
+    display:flex;
+    flex-direction: column;
+    font-family: 'Roboto';
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: rgb(245, 245, 245) !important;
+}
+
+body h1 {
+    font-family: 'Nunito';
+}
+
+body p {
+    font-weight: 300;
+}
+
+/*header*/
+
+header {
+    width:100%;
+    height: auto;
+    padding: 10px 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #444;
+    background-image: url("./images/dark-mosaic.png")
+}
+
+header .logo {
+    width: 90%;
+    display: flex;
+}
+
+header img {
+    margin: auto;
+    width: 120px;
+    height: auto;
+}
+
+header h1 {
+    margin: 0px;
+    margin-bottom: 5px;
+    width: 90%;
+    text-align: center;
+    color: #fff;
+    font-weight: 700;
+}
+
+/*body*/
+
+.container p {
+    line-height: 1.65em;
+}
+
+.clearfix:after {
+    content: " "; /* Older browser do not support empty content */
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+.container {
+    width:100%;
+    flex-direction: column;
+    overflow:hidden;
+    flex: 1 0 auto;
+}
+
+.content-wrapper {
+    max-width: 1200px;
+    margin: auto;
+    padding: 30px 10%;
+}
+
+.content-wrapper h1{
+    margin: 0;
+    font-size: 28px;
+    text-align: center;
+}
+
+.section {
+    padding: 10px 0;
+    border-bottom: dotted 2px #bbb;
+}
+
+.section:last-of-type{
+    border-bottom: none;
+}
+
+.intro p {
+    font-size: 16px;
+}
+
+.cmd-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.cmd {
+    width: 200px;
+    color: #fff;
+    overflow: hidden;
+    padding: 20px;
+    display: flex;
+    align-items: stretch;
+}
+
+.cmd .txt-wrapper {
+    width: 100%;
+    padding: 10px;
+    background-color: #222;
+}
+
+.cmd .txt-wrapper h2{
+    margin-top: 10px;
+}
+
+.cmd .txt-wrapper p{
+    font-size: 12px;
+}
+
+.conf-ex {
+    margin: auto;
+    width: 90%;
+    background-color: #222;
+    color: #fff;
+    padding: 10px;
+}
+
+.branches .img-wrapper {
+    margin: auto;
+    max-width: 680px;
+}
+
+.img-wrapper img {
+    width: 100%;
+}
+
+footer {
+    background-color: #444;
+    background-image: url("./images/dark-mosaic.png");
+    text-align: center;
+    padding: 50px 5%;
+    color: #fff;
+}
+
