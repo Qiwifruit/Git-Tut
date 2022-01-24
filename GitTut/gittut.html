@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Qiwi's Very Awesome Github Tutorial</title>
+
+        <!--Stylehsheet-->
+        <link href="./style.css" rel="stylesheet">
+
+        <!-- JQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Nunito:400,700|Roboto:300&display=swap" rel="stylesheet">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    </head>
+    
+    <body>
+        <header>
+            <div class='logo'>
+                <img id='logo' src="./images/logo.png">
+            </div>
+            <h1>
+                Qiwi's Very Awesome Github Tutorial
+            </h1>
+        </header>
+        
+        <div class=" container clearfix">
+            <div class="content-wrapper">
+                <div class ='section intro'>
+                    <h1>Hello 490 Friends</h1>
+                    <p>
+                        Welcome to my such amazing, much wow Github tutorial. Since you got here I'm assuming you've already installed git and cloned our repository per my instructions on Facebook. If not...how did you get here?... Navigate to directory of cloned repository in terminal to use git commands.
+                    </p>
+                </div>
+                <div class='section commands'>
+                    <h1>Basic Git Commands</h1>
+                    <div class='cmd-wrapper'>
+                        <div class='cmd'>
+                            <div class = 'txt-wrapper'>
+                                <h2>~$ git status</h2>
+                                <p>~$ See the difference between your local directory and git repository.</p>
+                            </div>
+                        </div>
+                        <div class='cmd'>
+                            <div class = 'txt-wrapper'>
+                                <h2>~$ git pull</h2>
+                                <p>~$ Grab latest version of files from master repository.</p>
+                                <p>~$ Always do this before making changes, as well as before committing any changes you've made.</p>
+                            </div>
+                        </div>
+                        <div class='cmd'>
+                            <div class = 'txt-wrapper'>
+                                <h2>~$ git add</h2>
+                                <p>~$ Add your changes to be committed to repository.</p>
+                                <p>~$ git add 'filenamehere'<br>(adds specified doc)</p>
+                                <p>~$ git add -A<br>(add all changes)</p>
+                            </div>
+                        </div>
+                        <div class='cmd'>
+                            <div class = 'txt-wrapper'>
+                                <h2>~$ git commit</h2>
+                                <p>~$ Commit changes added using git add.</p>
+                                <p>~$ git commit -m 'comment on changes here'</p>
+                                <p>~$ Use esc and enter :wq when committing without message.</p>
+                            </div>
+                        </div>
+                        <div class='cmd'>
+                            <div class = 'txt-wrapper'>
+                                <h2>~$ git push</h2>
+                                <p>~$ Push committed changes into repository.</p>
+                                <p>~$ Always do this before making changes!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class ='section conflict'>
+                    <h1>CONFLICTS!</h1>
+                    <p>
+                        A wild conflict has appeared! Don't panick. Someone else made changes to the same file you were editing. The following syntax will show up in your editor:
+                    </p>
+                    <div class = 'conf-ex'>
+                        <p><<<<<<< HEAD<br>
+                            Code in your local file/changes you made<br>
+                            =======<br>
+                            Code added by someone else<br>
+                        >>>>>>> randomstufforbranchname
+                        </p>
+                    </div>
+                    <p>
+                        Kindly communicate with your fellow group members to decide who's code shall emerge victorious. Or if you are confident in how to resolve the conflict, just go ahead and input the correct code. Note that if you are wrong, we'll never forgive you =). 
+                        To commit and push the correct changes onto repository, simply delete the conflict syntax and input the correct code, then add the file and commit again.
+                    </p>
+                </div>
+                <div class ='section branches'>
+                    <h1>Branching</h1>
+                    <p>
+                        It is recommended you create a branch to build your code on. Here is a quick overview of branch commands.
+                    </p>
+                    <ol>
+                        <li><b>git branch</b><br>
+                        Lists all repository branches. The current branch you are in will have a * beside it and likely be green.</li>
+                        <li><b>git branch newbranch</b><br>
+                        Will create a new branch with the name newbranch (or whatever you decide to name it) assuming one does not already exist. Branch contents will be a duplicate of master branch until you go in and make changes.
+                        </li>
+                        <li><b>git checkout branchname</b><br>
+                        Use checkout to move into desired branch.
+                        </li>
+                        <li><b>git branch -m newname</b><br>
+                        Did you name your branch something stupid like newbranch? To change the name, make sure you are on the branch you want to rename, then use the git branch -m command followed by your desired branch name.
+                        </li>
+                        <li><b>git merge master</b><br>
+                        Use merge command to merge your code back into the master branch. Conflicts may arise if changes were made to master that vary from your own edits. See previous section on CONFLICTS!.
+                        </li>
+                        <li><b>git push --set-upstream origin branchname</b><br>
+                        To push your new branch onto the repository, you'll need to use the --set-upstream origin command. Just use git push and git will automatically suggest this.
+                        </li>
+                    </ol>
+                    <p>
+                        You'll then want to create a pull request for your edits. To do this, go onto the GitHub repository page, select your new branch and find the button in the picture. Take a guess as to which button I'm talking about.
+                    </p>
+                    <div class = 'img-wrapper'>
+                        <img src = './images/pullrequest.jpg'>
+                    </div>
+                    <p>
+                        Fill out appropriate info and create the pull request. Wait patiently for group members to review. If you're confident you can just merge it yourself. But that would kind of defeat the whole purpose of this...
+                    </p>
+                </div>
+                    <div class ='section intro'>
+                        <h1>The End</h1>
+                        <p>
+                            Congrats. You've reached the end. You should now be a git master. Theoretically. 
+                            If you didn't understand anything, click <a href='https://www.google.com/search?hl=&site=&q=How+to+use+github'>here</a> for additional resources.
+                        </p>
+                    </div>
+            </div>
+        </div> <!--content wrapper/container/clearfix-->
+        <footer>
+            <p>
+                This such amazing, much wow tutorial is property of Qiwi and protected by copyright, trademark, patent, industrial design and trade secrets. All rights reserved - Qiwi 2019.<br>
+                Disclaimer: Qiwi is not responsible for any  damages arising from the use of this tutorial or it's contents.  
+            </p>
+        </footer>
+    </body>
+</html>
